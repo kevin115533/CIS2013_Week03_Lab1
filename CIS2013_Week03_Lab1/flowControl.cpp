@@ -1,29 +1,17 @@
 #include <iostream>
+#include <stdlib.h>
+#include <time.h>
 using namespace std;
 
 int main(){
-	char continueProgram = 'x';
 
-	for (int i = 0; i <= 99; i++) {
-		cout << i << " bottles of beer on the wall" << endl;
-	}
+	char cont;
+	srand(time(NULL));
 
-	cin >> continueProgram;
-	/*do {
-
-		cout << "Do you want to continue? (y/n)" << endl;
-		cin >> continueProgram;
-
-		switch (continueProgram) {
-		case 'y':
-			cout << "Going to continue" << endl;
-			break;
-		case 'n':
-			cout << "Going to exit" << endl;
-			break;
-		default:
-			continueProgram = 'y';
-		}
-	} while (continueProgram == 'y');*/
+	int num1 = rand() % 10 + 1;
+	cout << "your random number is " << num1;
+	cin >> cont;
+	
+		
 	return 0;
 }
