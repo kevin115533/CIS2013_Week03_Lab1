@@ -4,7 +4,12 @@ using namespace std;
 int main(){
 	char continueProgram = 'x';
 
-	do {
+	for (int i = 0; i <= 99; i++) {
+		cout << i << " bottles of beer on the wall" << endl;
+	}
+
+	cin >> continueProgram;
+	/*do {
 
 		cout << "Do you want to continue? (y/n)" << endl;
 		cin >> continueProgram;
@@ -19,6 +24,6 @@ int main(){
 		default:
 			continueProgram = 'y';
 		}
-	} while (continueProgram == 'y');
+	} while (continueProgram == 'y');*/
 	return 0;
 }
